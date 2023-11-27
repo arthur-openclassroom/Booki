@@ -16,6 +16,8 @@
 body {
     margin-top: 0px;
     padding-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     justify-content: center;
 }
@@ -27,15 +29,17 @@ body {
     box-sizing: border-box;
 }
 
+/* Header */
+
 .header-container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    margin-left: -50px;
 }
 
 .header-container img {
-    height: 15px;
-    padding: 10px 10px;
+    padding: 30px 50px;
+    height: 19px;
 }
 
 .header-links {
@@ -45,7 +49,7 @@ body {
 
 .header-links a {
     align-items: center;
-    margin-right: 50px;
+    margin-left: 50px;
     padding-top: 12px;
     margin-top: 1px;
 }
@@ -60,6 +64,240 @@ body {
     border: none;
     background: none;
 }
+/* End Header */
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+
+/* Search form */
+#search-form form { 
+    margin-top: 35px;
+    display: flex;
+    width: 500px;
+}
+
+#search-form form input {
+    font-weight: bold;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: solid 1px #F2F2F2;
+}
+
+#search-form-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+}
+
+.fa-location-dot {
+    color: #000;
+}
+
+.fa-magnifying-glass {
+    color: #FFF;
+}
+
+.search-form-button {
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 49px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: -1px;
+}
+
+#search-form-button-icon {
+    border-radius: 15px;
+    margin-left: -25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* End Search */
+
+/* Filters */
+
+#filters {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#filters h2 {
+    margin-right: 15px;
+}
+
+#filters button {
+    margin-right: 15px;
+    height: 42px;
+    border: solid 2px #D9D9D9;
+    background: #FFF;
+    border-radius: 25px;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#filters button:hover {
+    background: #DEEBFF;
+}
+
+#filters button i {
+    margin-right: 10px;
+}
+
+/* End Filters */
+
+/* Infobar */
+
+#infobar {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#infobar i {
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 24px;
+    height: 19px;
+    color: #0065FC;
+    border: solid 1px #D9D9D9;
+    text-align: center;
+    align-content:end;
+    padding-top: 5px;
+}
+
+/* End Infobar */
+
+
+/* Hébergements Marseille */
+
+.hebergements-marseille {
+    margin-right: 40px;
+}
+
+.hebergements-marseille h2 {
+    margin-bottom: 30px;
+}
+
+
+.marseille-cards {
+    display: flex;
+    justify-content: space-around;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.marseille-card .card {
+    width: 248px;
+    padding: 5px;
+}
+
+.marseille-card .card img {
+    height: 124px;
+    border-top-right-radius: 15px ;
+    border-top-left-radius: 15px ;
+    object-fit: cover;
+    width: 100%;
+}
+
+.marseille-card .card-content {
+    margin-left: 15px;
+}
+
+.marseille-card h3 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.marseille-card p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.marseille-card .card-rating {
+    margin-bottom: 10px;
+}
+
+#see-more {
+    flex: 0 0 100%
+}
+
+
+/* End Hébergements Marseille */
+
+/* Activités Marseille */
+
+.activites-marseille {
+    padding: 30px;
+}
+
+.activites-marseille-title {
+    margin-bottom: 30px;
+}
+
+.activites-marseille-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activites-marseille .card {
+    width: 260px;
+    height: 440px;
+    padding: 0;
+}
+
+.activites-marseille .card img {
+    height: 380px;
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activites-marseille .card-content {
+    padding-left: 15px;
+}
+
+/* End Activités Marseille */
+
+/* Footer */
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    padding-left: 0;
+
+}
+
+/* End Footer */
 
 a {
     color: inherit;
@@ -98,6 +336,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
