@@ -288,13 +288,18 @@ h2 {
 
 /* Footer */
 
+footer {
+    display: flex;
+}
+
 footer ul {
+    flex-basis: 30%;
     list-style-type: none;
 }
 
 footer ul li {
     padding-left: 0;
-
+    margin-bottom: 15px;
 }
 
 /* End Footer */
