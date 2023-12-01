@@ -49,15 +49,19 @@ body {
     margin-left: 50px;
 }
 
-.header-links a {
+.header form {
     align-items: center;
-    padding-top: 12px;
     margin-top: 1px;
 }
 
+form button {
+    padding-top: 12px;
+    cursor: pointer;
+}
+
 .header-link:hover {
-    color: #0065fc;
-    border-top: solid 2px #0065fc;
+    color: var(--main-color);
+    border-top: solid 2px var(--main-color);
     margin-top: -1px;
 }
 
@@ -90,7 +94,7 @@ h2 {
     font-weight: bold;
     padding-left: 24px;
     padding-right: 24px;
-    border: solid 1px #f2f2f2;
+    border: solid 1px var(--main-bg-color);
 }
 
 #search-form-icon {
@@ -99,7 +103,7 @@ h2 {
     align-items: center;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: #f2f2f2;
+    background-color: var(--main-bg-color);
     width: 50px;
     height: 49px;
 }
@@ -113,8 +117,8 @@ h2 {
 }
 
 .search-form-button {
-    border: 1px solid #0065fc;
-    background-color: #0065fc;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
     align-items: center;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -164,7 +168,7 @@ h2 {
 
 #filters button:hover,
 #filters button:active {
-    background: #deebff;
+    background: var(--filter-bg-color);
 }
 
 #filters button i {
@@ -188,7 +192,7 @@ h2 {
     font-size: 12px;
     width: 24px;
     height: 19px;
-    color: #0065fc;
+    color: var(--main-color);
     border: solid 1px #d9d9d9;
     text-align: center;
     align-content: end;
@@ -301,7 +305,7 @@ h2 {
 footer {
     margin-top: 35px;
     display: flex;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
 }
 
 footer ul {
@@ -535,7 +539,7 @@ a {
     }
 
     .header-links {
-        border-bottom: solid 2px #F2F2F2;
+        border-bottom: solid 2px var(--main-bg-color);
     }
 
     .header-link {
@@ -544,13 +548,10 @@ a {
         margin-left: 0px;
     }
 
-    .header-links a {
-        margin-left: 0;
-    }
 
     .header-link:hover {
-        color: #0065fc;
-        border-bottom: solid 2px #0065fc;
+        color: var(--main-color);
+        border-bottom: solid 2px var(--main-color);
         border-top: none;
         margin-bottom: -2px;
     }
