@@ -473,6 +473,10 @@ width: 30%;
         flex-direction: column;
     }
 
+    .hebergements-marseille {
+        width: 100%;
+    }
+
     .hebergements {
         width: 100%;
     }
@@ -505,7 +509,7 @@ width: 30%;
     }
 
     .activites-marseille .card {
-        height: 200px;
+        height: 150px;
     }
 
     .activites-marseille .card img {
@@ -515,6 +519,18 @@ width: 30%;
     .activites-marseille .card .card-title {
         vertical-align: middle;
         margin: 0;
+    }
+
+    .activites-marseille .card-content {
+        padding: 10px;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activites-marseille .card-txt h3{
+        font-size: 13px;
     }
 }
 
@@ -657,7 +673,7 @@ width: 30%;
     }
 
     .activites-marseille .card img {
-        height: 100px;
+        height: 200px;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         object-fit: cover;
