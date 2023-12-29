@@ -613,6 +613,7 @@ width: 30%;
         display: block;
     }
 
+    /* Passage en column-reverse pour changer l'ordre d'affichage */
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
